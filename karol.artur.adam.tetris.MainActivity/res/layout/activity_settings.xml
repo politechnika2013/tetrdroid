@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/sounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tvSounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sounds" />
+
+        <CheckBox
+            android:id="@+id/chSounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSounds"
+            android:layout_marginLeft="30dp"
+            android:text="play music" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chSounds"
+            android:layout_marginLeft="30dp"
+            android:text="play game effects" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/separator"
+        android:layout_width="250dp"
+        android:layout_height="4dp"
+        android:layout_below="@+id/sounds"
+        android:layout_centerHorizontal="true"
+        android:background="#00b7cd" />
+
+     <RelativeLayout
+        android:id="@+id/blocedit"
+        android:layout_below="@+id/separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/tvBlockEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blocks editor" />
+
+        <Button
+            android:id="@+id/bCreateBlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBlockEdit"
+            android:layout_marginLeft="30dp"
+            android:text="Create own block"
+            android:enabled="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bCreateBlock"
+            android:layout_marginLeft="30dp"
+            android:text="You are using free version.\nUpdate to full one." />
+    </RelativeLayout>
+</RelativeLayout>

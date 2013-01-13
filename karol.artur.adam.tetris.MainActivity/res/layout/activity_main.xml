@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121" >
+
+    <ImageView
+        android:id="@+id/IVmenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/menutop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IVmenu"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/startGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="#212121"
+            android:padding="10dp"
+            android:text="@string/startgame"
+            android:textColor="#2f5327"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/scoreGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startGame"
+            android:layout_centerHorizontal="true"
+            android:background="#212121"
+            android:padding="10dp"
+            android:text="@string/scores"
+            android:textColor="#2f5327"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/settingsGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scoreGame"
+            android:layout_centerHorizontal="true"
+            android:background="#212121"
+            android:padding="10dp"
+            android:text="@string/options"
+            android:textColor="#2f5327"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/exitGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settingsGame"
+            android:layout_centerHorizontal="true"
+            android:background="#212121"
+            android:padding="10dp"
+            android:text="@string/exit"
+            android:textColor="#2f5327"
+            android:textSize="30sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

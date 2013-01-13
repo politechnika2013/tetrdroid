@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">TetrDroid</string>
+	<string name="startgame">New game</string>
+	<string name="scores">Scores</string>
+	<string name="options">Options</string>
+	<string name="exit">Exit</string>
+
+</resources>
